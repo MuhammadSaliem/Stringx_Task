@@ -33,6 +33,16 @@ public class Stringx_Test {
 
         assertEquals(strBefore.toLower().toString(), strAfter.toString());
     }
+    
+    @Test
+    public void isEmpty_returnTrueIfIsEmpty_True(){
+        Stringx str = new Stringx();
+
+        boolean expected = true;
+        boolean actual = str.isEmpty();
+
+        assertEquals(actual, expected);
+    }
 
     @Test
     public void toUpper_convertStringToUpperCase_True()
